@@ -1,6 +1,6 @@
 import { mainConfig } from "@/config/main"
 import { MainNav } from "@/components/MainNav"
-import { Search } from "@/components/search"
+import { Search } from "@/components/Search"
 import { DocsSidebarNav } from "@/components/DocsSideNav"
 
 export default function Navbar() {

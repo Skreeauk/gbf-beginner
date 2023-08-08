@@ -4,7 +4,7 @@ import { useMDXComponent } from "next-contentlayer/hooks"
 
 import { cn } from "@/lib/utils"
 import { Callout } from "@/components/MDXCallout"
-import { MDXCard } from "@/components/MdxCard"
+import { MDXCard } from "@/components/MDXCard"
 
 const components = {
     h1: ({ className, ...props }) => (

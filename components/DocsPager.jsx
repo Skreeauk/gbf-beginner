@@ -3,7 +3,7 @@ import Link from "next/link"
 import { mainConfig } from "@/config/main"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
-import { Icons } from "@/components/icons"
+import { Icons } from "@/components/Icons"
 
 export function DocsPager({ doc }) {
     const pager = getPagerForDoc(doc)
