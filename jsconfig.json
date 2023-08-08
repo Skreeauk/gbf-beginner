@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "contentlayer/generated": ["./.contentlayer/generated"]
     },
     "baseUrl": "."
-  }
+  },
+  "include": [
+    ".contentlayer/generated",
+  ]
 }
