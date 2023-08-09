@@ -13,7 +13,10 @@ export function Hover({
     ...props
 }) {
     return (
-        <HoverCard>
+        <HoverCard
+            openDelay={150}
+            closeDelay={200}
+        >
             <HoverCardTrigger>
                 <InfoCircledIcon
                     className="h-5 w-5"

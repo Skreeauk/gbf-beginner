@@ -8,6 +8,15 @@ import { Callout } from "./MDXCallout"
 import { MDXCard } from "./MDXCard"
 import { Hover } from "./MDXHover"
 
+import {
+    Tabs,
+    TabsContent,
+    TabsList,
+    TabsTrigger,
+} from "@/components/ui/tabs"
+
+import { AspectRatio } from "@/components/ui/aspect-ratio"
+
 const components = {
     h1: ({ className, ...props }) => (
         <h1
@@ -178,7 +187,44 @@ const components = {
             {...props}
         />
     ),
+    Tabs: ({ className, ...props }) => (
+        <Tabs
+            className={cn(
+                "relative mt-6 w-full",
+                className
+            )}
+            {...props}
+        />
+    ),
+    TabsList: ({ className, ...props }) => (
+        <TabsList
+            className={cn(
+                "w-full justify-start rounded-none border-b bg-transparent p-0",
+                className
+            )}
+            {...props}
+        />
+    ),
+    TabsTrigger: ({ className, ...props }) => (
+        <TabsTrigger
+            className={cn(
+                "relative h-9 rounded-none border-b-2 border-b-transparent bg-transparent px-4 pb-3 pt-2 font-semibold text-muted-foreground shadow-none transition-none data-[state=active]:border-b-primary data-[state=active]:text-foreground data-[state=active]:shadow-none",
+                className
+            )}
+            {...props}
+        />
+    ),
+    TabsContent: ({ className, ...props }) => (
+        <TabsContent
+            className={cn(
+                "relative [&_h3.font-heading]:text-base [&_h3.font-heading]:font-semibold",
+                className
+            )}
+            {...props}
+        />
+    ),
     Image,
+    AspectRatio,
     Callout,
     Hover,
     Card: MDXCard,
