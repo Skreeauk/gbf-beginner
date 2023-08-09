@@ -1,7 +1,3 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import Image from "next/image"
-
 import {
     Accordion,
     AccordionContent,
@@ -9,11 +5,13 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion"
 
+import MovingDiv from "./components/MovingDiv"
+
 export default function HomePage() {
     return (
         <main className="flex-1 flex flex-col gap-32 text-secondary">
             <div className="h-[70vh] px-4 py-2 flex flex-row mt-16">
-                <div className="flex-1 flex flex-row">
+                <MovingDiv className="flex-1 flex flex-row">
                     <div className="basis-1/3">
                         <div className="flex flex-col items-center justify-center text-center gap-24 h-full w-full">
                             <span className="text-4xl">
@@ -41,10 +39,10 @@ export default function HomePage() {
                     <div className="flex-1 bg-[url('/images/jeanne_skin.png')] bg-auto bg-no-repeat bg-center">
                         <div className="h-full w-full flex items-center justify-start bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent from-30% via-foreground via-70% to-foreground to-100%"></div>
                     </div>
-                </div>
+                </MovingDiv>
             </div>
             <div className="h-[70vh] px-4 py-2 flex flex-row">
-                <div className="flex-1 flex flex-row gap-4">
+                <MovingDiv className="flex-1 flex flex-row gap-4">
                     <div className="flex-1 bg-[url('/images/fraux_skin.png')] bg-auto bg-no-repeat bg-[0_center]">
                         <div className="h-full w-full flex items-center justify-start bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent from-30% via-foreground via-70% to-foreground to-100%"></div>
                     </div>
@@ -77,10 +75,10 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </MovingDiv>
             </div>
             <div className="h-[50vh] flex items-center justify-center">
-                <div className="w-1/2 flex flex-col items-center justify-center gap-6">
+                <MovingDiv className="w-1/2 flex flex-col items-center justify-center gap-6">
                     <span className="text-4xl">FAQ</span>
                     <Accordion
                         type="single"
@@ -143,7 +141,7 @@ export default function HomePage() {
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
-                </div>
+                </MovingDiv>
             </div>
         </main>
     )

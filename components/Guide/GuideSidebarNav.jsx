@@ -5,6 +5,13 @@ import { usePathname } from "next/navigation"
 
 import { cn } from "@/lib/utils"
 
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion"
+
 export function GuideSidebarNav({ items }) {
     const pathname = usePathname()
 
@@ -62,20 +69,33 @@ export function SidebarNavItems({ items, pathname, deep }) {
                         {item.title}
                     </Link>
                 ) : item.items ? (
-                    <div key={index}>
-                        <span
-                            className={cn(
-                                "flex w-full items-center p-2 pl-4 hover:border-l hover:border-secondary"
-                            )}
+                    <Accordion
+                        key={index}
+                        type="single"
+                        collapsible
+                    >
+                        <AccordionItem
+                            value="item-1"
+                            className="border-none"
                         >
-                            {item.title}
-                        </span>
-                        <SidebarNavItems
-                            items={item.items}
-                            pathname={pathname}
-                            deep={true}
-                        />
-                    </div>
+                            <AccordionTrigger className="py-0 text-start">
+                                <span
+                                    className={cn(
+                                        "flex w-full items-center p-2 pl-4 hover:border-l hover:border-secondary"
+                                    )}
+                                >
+                                    {item.title}
+                                </span>
+                            </AccordionTrigger>
+                            <AccordionContent>
+                                <SidebarNavItems
+                                    items={item.items}
+                                    pathname={pathname}
+                                    deep={true}
+                                />
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
                 ) : (
                     <span
                         key={index}
