@@ -33,9 +33,9 @@ export function ThemeButton() {
             }
         >
             {resolvedTheme === "dark" ? (
-                <SunIcon className="h-4 w-4 text-foreground dark:text-secondary" />
-            ) : (
                 <MoonIcon className="h-4 w-4 text-secondary" />
+            ) : (
+                <SunIcon className="h-4 w-4 text-secondary" />
             )}
         </Button>
     )
