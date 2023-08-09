@@ -41,11 +41,23 @@ export const mainConfig = {
                 {
                     title: "Before Starting",
                     href: "/guide/reroll-before-starting",
-                    disabled: true,
                 },
                 {
-                    title: "Account Creation",
-                    href: "/guide/reroll-account-creation",
+                    title: "Creating Accounts",
+                    items: [
+                        {
+                            title: "Salted Emails",
+                            href: "/guide/reroll-salted-email",
+                        },
+                        {
+                            title: "Account Creation",
+                            href: "/guide/reroll-account-creation",
+                        },
+                        {
+                            title: "Troubleshooting",
+                            href: "/guide/reroll-troubleshooting",
+                        },
+                    ],
                 },
                 {
                     title: "Skipping Tutorial",
@@ -58,7 +70,6 @@ export const mainConfig = {
                 {
                     title: "What To Keep",
                     href: "/guide/reroll-what-to-keep",
-                    disabled: true,
                 },
             ],
         },

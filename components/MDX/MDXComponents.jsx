@@ -1,5 +1,6 @@
 import * as React from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { useMDXComponent } from "next-contentlayer/hooks"
 
 import { cn } from "@/lib/utils"
@@ -62,9 +63,9 @@ const components = {
         />
     ),
     a: ({ className, ...props }) => (
-        <a
+        <Link
             className={cn(
-                "font-medium underline underline-offset-4",
+                "font-medium text-primary underline underline-offset-4",
                 className
             )}
             {...props}

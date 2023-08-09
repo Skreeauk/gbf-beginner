@@ -3,7 +3,7 @@ import { Inter } from "next/font/google"
 
 import { Analytics } from "@vercel/analytics/react"
 
-import Navbar from "@/components/Navbar"
+import { ThemeProvider } from "@/components/Provider/ThemeProvider"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -14,11 +14,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en">
+        <html
+            lang="en"
+            suppressHydrationWarning
+        >
             <body className={inter.className}>
-                <div className="min-h-screen flex flex-col bg-gray-950">
-                    {children}
-                </div>
+                <ThemeProvider
+                    attribute="class"
+                    defaultTheme="system"
+                    enableSystem
+                >
+                    <div className="min-h-screen flex flex-col bg-foreground">
+                        {children}
+                    </div>
+                </ThemeProvider>
                 <Analytics />
             </body>
         </html>

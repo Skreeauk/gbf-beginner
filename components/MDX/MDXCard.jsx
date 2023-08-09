@@ -7,6 +7,7 @@ export function MDXCard({
     className,
     children,
     disabled,
+    target,
     ...props
 }) {
     return (
@@ -27,6 +28,7 @@ export function MDXCard({
                 <Link
                     href={disabled ? "#" : href}
                     className="absolute inset-0"
+                    target={target}
                 >
                     <span className="sr-only">View</span>
                 </Link>

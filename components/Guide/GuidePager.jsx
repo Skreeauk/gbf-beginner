@@ -21,7 +21,7 @@ export function GuidePager({ guide }) {
                         buttonVariants({
                             variant: "ghost",
                         }),
-                        "hover:bg-secondary/80"
+                        "hover:text-primary hover:bg-transparent"
                     )}
                 >
                     <Icons.chevronLeft className="mr-2 h-4 w-4" />
@@ -35,7 +35,7 @@ export function GuidePager({ guide }) {
                         buttonVariants({
                             variant: "ghost",
                         }),
-                        "ml-auto hover:bg-secondary/80"
+                        "ml-auto hover:text-primary hover:bg-transparent"
                     )}
                 >
                     {pager.next.title}

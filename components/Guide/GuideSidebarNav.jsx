@@ -30,18 +30,23 @@ export function GuideSidebarNav({ items }) {
     ) : null
 }
 
-export function SidebarNavItems({ items, pathname }) {
+export function SidebarNavItems({ items, pathname, deep }) {
     return items?.length ? (
-        <div className="grid grid-flow-row auto-rows-max text-sm text-secondary pl-4 border-l border-secondary/80 ml-2">
+        <div
+            className={cn(
+                "grid grid-flow-row auto-rows-max text-sm text-secondary/70 border-l border-secondary/30 ml-3",
+                deep && "ml-5"
+            )}
+        >
             {items.map((item, index) =>
                 !item.disabled && item.href ? (
                     <Link
                         key={index}
                         href={item.href}
                         className={cn(
-                            "flex w-full items-center rounded-md p-2 hover:underline hover:text-black hover:bg-secondary/80",
+                            "flex w-full items-center p-2 pl-4 hover:underline hover:text-secondary hover:border-l hover:border-secondary",
                             {
-                                "bg-secondary/70 text-black hover:text-black":
+                                "text-primary border-l border-primary":
                                     pathname === item.href,
                             }
                         )}
@@ -56,10 +61,25 @@ export function SidebarNavItems({ items, pathname }) {
                     >
                         {item.title}
                     </Link>
+                ) : item.items ? (
+                    <div key={index}>
+                        <span
+                            className={cn(
+                                "flex w-full items-center p-2 pl-4 hover:border-l hover:border-secondary"
+                            )}
+                        >
+                            {item.title}
+                        </span>
+                        <SidebarNavItems
+                            items={item.items}
+                            pathname={pathname}
+                            deep={true}
+                        />
+                    </div>
                 ) : (
                     <span
-                        key={index + "-" + index}
-                        className="flex w-full cursor-not-allowed items-center rounded-md p-2 opacity-60"
+                        key={index}
+                        className="flex w-full cursor-not-allowed items-center rounded-md p-2 pl-4 opacity-60"
                     >
                         {item.title}
                     </span>
