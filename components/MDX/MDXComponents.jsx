@@ -6,6 +6,7 @@ import { useMDXComponent } from "next-contentlayer/hooks"
 import { cn } from "@/lib/utils"
 import { Callout } from "./MDXCallout"
 import { MDXCard } from "./MDXCard"
+import { Hover } from "./MDXHover"
 
 const components = {
     h1: ({ className, ...props }) => (
@@ -179,6 +180,7 @@ const components = {
     ),
     Image,
     Callout,
+    Hover,
     Card: MDXCard,
 }
 

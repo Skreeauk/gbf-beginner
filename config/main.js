@@ -74,6 +74,66 @@ export const mainConfig = {
             ],
         },
         {
+            title: "Mechanics",
+            items: [
+                {
+                    title: "Introduction",
+                    href: "/guide/mechanics",
+                    disabled: true,
+                },
+                {
+                    title: "UI",
+                    items: [
+                        {
+                            title: "Home",
+                            href: "/guide/mechanics-home",
+                            disabled: true,
+                        },
+                        {
+                            title: "Raid",
+                            href: "/guide/mechanics-raid",
+                            disabled: true,
+                        },
+                        {
+                            title: "Co-op",
+                            href: "/guide/mechanics-coop",
+                            disabled: true,
+                        },
+                    ],
+                },
+                {
+                    title: "Party",
+                    items: [
+                        {
+                            title: "Characters",
+                            href: "/guide/mechanics-characters",
+                            disabled: true,
+                        },
+                        {
+                            title: "Weapons",
+                            href: "/guide/mechanics-weapons",
+                            disabled: true,
+                        },
+                        {
+                            title: "Summons",
+                            href: "/guide/mechanics-summons",
+                            disabled: true,
+                        },
+                    ],
+                },
+                {
+                    title: "Battle",
+                    href: "/guide/mechanics-battle",
+                    disabled: true,
+                },
+                {
+                    title: "Shop",
+                    href: "/guide/mechanics-shop",
+                    disabled: true,
+                },
+            ],
+        },
+        {
             title: "Beginner",
             items: [
                 {
