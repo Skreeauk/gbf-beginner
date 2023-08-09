@@ -5,8 +5,8 @@ export const mainConfig = {
             href: "/home",
         },
         {
-            title: "Documentation",
-            href: "/guide/guide-test",
+            title: "Guide",
+            href: "/guide/getting-started",
         },
         {
             title: "Resources",
@@ -23,117 +23,106 @@ export const mainConfig = {
             items: [
                 {
                     title: "Introduction",
-                    href: "/guide",
+                    href: "/guide/getting-started",
+                },
+                {
+                    title: "Configuration",
+                    href: "/guide/getting-started-configuration",
                 },
             ],
         },
         {
-            title: "Documentation",
+            title: "Rerolling",
             items: [
                 {
                     title: "Introduction",
-                    href: "/guide/documentation",
+                    href: "/guide/reroll",
                 },
                 {
-                    title: "Contentlayer",
-                    href: "/guide/in-progress",
+                    title: "Before Starting",
+                    href: "/guide/reroll-before-starting",
                     disabled: true,
                 },
                 {
-                    title: "Components",
-                    href: "/guide/documentation/components",
+                    title: "Account Creation",
+                    href: "/guide/reroll-account-creation",
                 },
                 {
-                    title: "Code Blocks",
-                    href: "/guide/documentation/code-blocks",
+                    title: "Skipping Tutorial",
+                    href: "/guide/reroll-skipping-tutorial",
                 },
                 {
-                    title: "Style Guide",
-                    href: "/guide/documentation/style-guide",
+                    title: "Collecting Draws",
+                    href: "/guide/reroll-collecting-draws",
                 },
                 {
-                    title: "Search",
-                    href: "/guide/in-progress",
-                    disabled: true,
-                },
-            ],
-        },
-        {
-            title: "Blog",
-            items: [
-                {
-                    title: "Introduction",
-                    href: "/guide/in-progress",
-                    disabled: true,
-                },
-                {
-                    title: "Build your own",
-                    href: "/guide/in-progress",
-                    disabled: true,
-                },
-                {
-                    title: "Writing Posts",
-                    href: "/guide/in-progress",
+                    title: "What To Keep",
+                    href: "/guide/reroll-what-to-keep",
                     disabled: true,
                 },
             ],
         },
         {
-            title: "Dashboard",
+            title: "Beginner",
             items: [
                 {
                     title: "Introduction",
-                    href: "/guide/in-progress",
+                    href: "/guide/beginner",
                     disabled: true,
                 },
                 {
-                    title: "Layouts",
-                    href: "/guide/in-progress",
+                    title: "Team Building",
+                    href: "/guide/beginner-team-building",
                     disabled: true,
                 },
                 {
-                    title: "Server Components",
-                    href: "/guide/in-progress",
+                    title: "Grid Building",
+                    href: "/guide/beginner-grid-building",
                     disabled: true,
                 },
                 {
-                    title: "Authentication",
-                    href: "/guide/in-progress",
-                    disabled: true,
-                },
-                {
-                    title: "Database with Prisma",
-                    href: "/guide/in-progress",
-                    disabled: true,
-                },
-                {
-                    title: "API Routes",
-                    href: "/guide/in-progress",
+                    title: "Progression",
+                    href: "/guide/beginner-progression",
                     disabled: true,
                 },
             ],
         },
         {
-            title: "Marketing Site",
+            title: "Intermediate",
             items: [
                 {
                     title: "Introduction",
-                    href: "/guide/in-progress",
+                    href: "/guide/intermediate",
                     disabled: true,
                 },
                 {
-                    title: "File Structure",
-                    href: "/guide/in-progress",
+                    title: "Grid Building",
+                    href: "/guide/intermediate-grid-building",
                     disabled: true,
                 },
                 {
-                    title: "Tailwind CSS",
-                    href: "/guide/in-progress",
+                    title: "Progression",
+                    href: "/guide/intermediate-progression",
+                    disabled: true,
+                },
+            ],
+        },
+        {
+            title: "Other",
+            items: [
+                {
+                    title: "Introduction",
+                    href: "/guide/other",
                     disabled: true,
                 },
                 {
-                    title: "Typography",
-                    href: "/guide/in-progress",
+                    title: "FAQ",
+                    href: "/guide/other-faq",
+                    disabled: true,
+                },
+                {
+                    title: "Contributing",
+                    href: "/guide/other-contributing",
                     disabled: true,
                 },
             ],

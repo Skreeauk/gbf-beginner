@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/Icons"
 
-export function DocsPager({ doc }) {
-    const pager = getPagerForDoc(doc)
+export function GuidePager({ guide }) {
+    const pager = getPagerForGuide(guide)
 
     if (!pager) {
         return null
@@ -18,7 +18,10 @@ export function DocsPager({ doc }) {
                 <Link
                     href={pager.prev.href}
                     className={cn(
-                        buttonVariants({ variant: "ghost" })
+                        buttonVariants({
+                            variant: "ghost",
+                        }),
+                        "hover:bg-secondary/80"
                     )}
                 >
                     <Icons.chevronLeft className="mr-2 h-4 w-4" />
@@ -32,7 +35,7 @@ export function DocsPager({ doc }) {
                         buttonVariants({
                             variant: "ghost",
                         }),
-                        "ml-auto"
+                        "ml-auto hover:bg-secondary/80"
                     )}
                 >
                     {pager.next.title}
@@ -43,15 +46,16 @@ export function DocsPager({ doc }) {
     )
 }
 
-export function getPagerForDoc(doc) {
+export function getPagerForGuide(guide) {
     const flattenedLinks = [
         null,
         ...flatten(mainConfig.sidebarNav),
         null,
     ]
     const activeIndex = flattenedLinks.findIndex(
-        (link) => doc.slug === link?.href
+        (link) => guide.slug === link?.href
     )
+
     const prev =
         activeIndex !== 0
             ? flattenedLinks[activeIndex - 1]

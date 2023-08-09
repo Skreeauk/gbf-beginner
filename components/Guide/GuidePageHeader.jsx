@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils"
 
-export function DocsPageHeader({
+export function GuidePageHeader({
     heading,
     text,
     className,

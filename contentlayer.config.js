@@ -11,12 +11,12 @@ import remarkGfm from "remark-gfm"
 const computedFields = {
     slug: {
         type: "string",
-        resolve: (doc) => `/${doc._raw.flattenedPath}`,
+        resolve: (guide) => `/${guide._raw.flattenedPath}`,
     },
     slugAsParams: {
         type: "string",
-        resolve: (doc) =>
-            doc._raw.flattenedPath
+        resolve: (guide) =>
+            guide._raw.flattenedPath
                 .split("/")
                 .slice(1)
                 .join("/"),
@@ -25,19 +25,19 @@ const computedFields = {
 
 export const Guide = defineDocumentType(() => ({
     name: "Guide",
-    filePathPattern: `**/*.mdx`,
+    filePathPattern: `./guide/**/*.mdx`,
     contentType: "mdx",
     fields: {
+        uniqueSlug: {
+            type: "string",
+            required: true,
+        },
         title: {
             type: "string",
             required: true,
         },
         description: {
             type: "string",
-        },
-        published: {
-            type: "boolean",
-            default: true,
         },
     },
     computedFields,

@@ -5,7 +5,7 @@ import { useState, useEffect, useMemo } from "react"
 import { cn } from "@/lib/utils"
 import { useMounted } from "@/hooks/use-mounted"
 
-export function DashboardTableOfContents({ toc }) {
+export function TableOfContents({ toc }) {
     const itemIds = useMemo(
         () =>
             toc.items
@@ -101,7 +101,7 @@ function Tree({ tree, level = 1, activeItem }) {
                         <a
                             href={item.url}
                             className={cn(
-                                "inline-block no-underline",
+                                "inline-block no-underline hover:text-secondary",
                                 item.url ===
                                     `#${activeItem}`
                                     ? "font-medium text-secondary"

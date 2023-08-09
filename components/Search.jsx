@@ -24,7 +24,7 @@ export function Search({ className, ...props }) {
         >
             <Input
                 type="search"
-                placeholder="Search documentation..."
+                placeholder="Search..."
                 className="h-8 w-full text-secondary sm:w-64 sm:pr-12"
             />
         </form>

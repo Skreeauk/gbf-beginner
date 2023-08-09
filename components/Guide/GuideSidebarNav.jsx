@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation"
 
 import { cn } from "@/lib/utils"
 
-export function DocsSidebarNav({ items }) {
+export function GuideSidebarNav({ items }) {
     const pathname = usePathname()
 
     return items.length ? (
@@ -19,7 +19,7 @@ export function DocsSidebarNav({ items }) {
                         {item.title}
                     </h4>
                     {item.items ? (
-                        <DocsSidebarNavItems
+                        <SidebarNavItems
                             items={item.items}
                             pathname={pathname}
                         />
@@ -30,18 +30,18 @@ export function DocsSidebarNav({ items }) {
     ) : null
 }
 
-export function DocsSidebarNavItems({ items, pathname }) {
+export function SidebarNavItems({ items, pathname }) {
     return items?.length ? (
-        <div className="grid grid-flow-row auto-rows-max text-sm text-secondary">
+        <div className="grid grid-flow-row auto-rows-max text-sm text-secondary pl-4 border-l border-secondary/80 ml-2">
             {items.map((item, index) =>
                 !item.disabled && item.href ? (
                     <Link
                         key={index}
                         href={item.href}
                         className={cn(
-                            "flex w-full items-center rounded-md p-2 hover:underline",
+                            "flex w-full items-center rounded-md p-2 hover:underline hover:text-black hover:bg-secondary/80",
                             {
-                                "bg-muted":
+                                "bg-secondary/70 text-black hover:text-black":
                                     pathname === item.href,
                             }
                         )}
