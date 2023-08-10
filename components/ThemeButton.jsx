@@ -23,7 +23,7 @@ export function ThemeButton() {
         <Button
             variant="outline"
             size="icon"
-            className="p-2 hover:bg-accent/20 dark:bg-foreground dark:hover:bg-accent/20"
+            className="p-2 hover:bg-foreground/70 bg-foreground"
             onClick={() =>
                 setTheme(
                     resolvedTheme === "dark"
@@ -33,9 +33,9 @@ export function ThemeButton() {
             }
         >
             {resolvedTheme === "dark" ? (
-                <MoonIcon className="h-4 w-4 text-secondary" />
-            ) : (
                 <SunIcon className="h-4 w-4 text-secondary" />
+            ) : (
+                <MoonIcon className="h-4 w-4 text-secondary" />
             )}
         </Button>
     )

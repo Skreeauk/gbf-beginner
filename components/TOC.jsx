@@ -31,7 +31,7 @@ export function TableOfContents({ toc }) {
 
     return mounted ? (
         <div className="space-y-2">
-            <p className="font-medium text-secondary">
+            <p className="font-medium text-foreground">
                 On This Page
             </p>
             <Tree
@@ -101,11 +101,11 @@ function Tree({ tree, level = 1, activeItem }) {
                         <a
                             href={item.url}
                             className={cn(
-                                "inline-block no-underline hover:text-secondary",
+                                "inline-block no-underline hover:text-foreground",
                                 item.url ===
                                     `#${activeItem}`
-                                    ? "font-medium text-secondary"
-                                    : "text-sm text-secondary/60"
+                                    ? "font-medium text-foreground"
+                                    : "text-sm text-foreground/60"
                             )}
                         >
                             {item.title}

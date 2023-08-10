@@ -22,7 +22,7 @@ export function GuideSidebarNav({ items }) {
                     key={index}
                     className={cn("pb-8")}
                 >
-                    <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-medium text-secondary">
+                    <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-medium text-foreground">
                         {item.title}
                     </h4>
                     {item.items ? (
@@ -41,7 +41,7 @@ export function SidebarNavItems({ items, pathname, deep }) {
     return items?.length ? (
         <div
             className={cn(
-                "grid grid-flow-row auto-rows-max text-sm text-secondary/70 border-l border-secondary/30 ml-3",
+                "grid grid-flow-row auto-rows-max text-sm text-foreground/70 border-l border-foreground/30 ml-3",
                 deep && "ml-5"
             )}
         >
@@ -51,7 +51,7 @@ export function SidebarNavItems({ items, pathname, deep }) {
                         key={index}
                         href={item.href}
                         className={cn(
-                            "flex w-full items-center p-2 pl-4 hover:underline hover:text-secondary hover:border-l hover:border-secondary",
+                            "flex w-full items-center p-2 pl-4 hover:underline hover:text-foreground hover:border-l hover:border-secondary",
                             {
                                 "text-primary border-l border-primary":
                                     pathname === item.href,

@@ -17,7 +17,12 @@ module.exports = {
             },
         },
         extend: {
+            backgroundImage: {
+                "card-bg":
+                    "radial-gradient(at 19% 75%, rgb(165, 180, 252) 0, transparent 80%), radial-gradient(at 84% 97%, rgb(244, 114, 182) 0, transparent 47%), radial-gradient(at 58% 29%, rgb(148, 163, 184) 0, transparent 43%), radial-gradient(at 71% 66%, rgb(240, 171, 252) 0, transparent 60%), radial-gradient(at 5% 48%, rgb(209, 213, 219) 0, transparent 18%), radial-gradient(at 50% 82%, rgb(71, 85, 105) 0, transparent 12%)",
+            },
             colors: {
+                "card-gradient": "rgb(38, 38, 38)",
                 border: "hsl(var(--border))",
                 input: "hsl(var(--input))",
                 ring: "hsl(var(--ring))",

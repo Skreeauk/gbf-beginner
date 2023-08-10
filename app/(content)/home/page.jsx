@@ -9,7 +9,7 @@ import MovingDiv from "./components/MovingDiv"
 
 export default function HomePage() {
     return (
-        <main className="flex-1 flex flex-col gap-32 text-secondary">
+        <main className="flex-1 flex flex-col gap-32 text-foreground">
             <div className="h-[70vh] px-4 py-2 flex flex-row mt-16">
                 <MovingDiv className="flex-1 flex flex-row">
                     <div className="basis-1/3">
@@ -37,14 +37,14 @@ export default function HomePage() {
                         </div>
                     </div>
                     <div className="flex-1 bg-[url('/images/jeanne_skin.png')] bg-auto bg-no-repeat bg-center">
-                        <div className="h-full w-full flex items-center justify-start bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent from-30% via-foreground via-70% to-foreground to-100%"></div>
+                        <div className="h-full w-full flex items-center justify-start bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent from-30% via-background via-70% to-background to-100%"></div>
                     </div>
                 </MovingDiv>
             </div>
             <div className="h-[70vh] px-4 py-2 flex flex-row">
                 <MovingDiv className="flex-1 flex flex-row gap-4">
                     <div className="flex-1 bg-[url('/images/fraux_skin.png')] bg-auto bg-no-repeat bg-center">
-                        <div className="h-full w-full flex items-center justify-start bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent from-30% via-foreground via-70% to-foreground to-100%"></div>
+                        <div className="h-full w-full flex items-center justify-start bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent from-30% via-background via-70% to-background to-100%"></div>
                     </div>
                     <div className="basis-1/3">
                         <div className="flex flex-col items-center justify-center text-center gap-24 h-full w-full pr-4">

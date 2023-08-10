@@ -6,7 +6,7 @@ import { ThemeButton } from "@/components/ThemeButton"
 
 export default function Navbar() {
     return (
-        <header className="sticky top-0 z-40 w-full bg-foreground">
+        <header className="sticky top-0 z-40 w-full bg-background pt-3">
             <div className="container flex gap-6 sm:gap-0 h-16 items-center space-x-4 justify-between sm:space-x-0">
                 <MainNav items={mainConfig.mainNav}>
                     <GuideSidebarNav
