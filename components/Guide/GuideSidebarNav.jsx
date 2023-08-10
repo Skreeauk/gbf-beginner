@@ -51,7 +51,7 @@ export function SidebarNavItems({ items, pathname, deep }) {
                         key={index}
                         href={item.href}
                         className={cn(
-                            "flex w-full items-center p-2 pl-4 hover:underline hover:text-foreground hover:border-l hover:border-secondary",
+                            "flex w-full items-center p-2 pl-4 hover:underline hover:text-foreground hover:border-l hover:border-foreground",
                             {
                                 "text-primary border-l border-primary":
                                     pathname === item.href,
