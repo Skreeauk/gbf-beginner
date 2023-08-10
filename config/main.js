@@ -74,62 +74,61 @@ export const mainConfig = {
             ],
         },
         {
-            title: "Mechanics",
+            title: "Core Concept",
             items: [
                 {
                     title: "Introduction",
-                    href: "/guide/mechanics",
-                    disabled: true,
+                    href: "/guide/core-concepts",
                 },
                 {
-                    title: "UI",
+                    title: "Classes",
+                    href: "/guide/core-concepts-classes",
+                },
+                {
+                    title: "Summons",
                     items: [
                         {
-                            title: "Home",
-                            href: "/guide/mechanics-home",
-                            disabled: true,
+                            title: "Magna",
+                            href: "/guide/core-concepts-magna",
                         },
                         {
-                            title: "Raid",
-                            href: "/guide/mechanics-raid",
-                            disabled: true,
+                            title: "Primal",
+                            href: "/guide/core-concepts-primal",
                         },
                         {
-                            title: "Co-op",
-                            href: "/guide/mechanics-coop",
-                            disabled: true,
+                            title: "Support",
+                            href: "/guide/core-concepts-support",
                         },
                     ],
                 },
                 {
-                    title: "Party",
+                    title: "Weapons",
                     items: [
                         {
-                            title: "Characters",
-                            href: "/guide/mechanics-characters",
-                            disabled: true,
+                            title: "Weapon Skills",
+                            href: "/guide/core-concepts-weapon-skills",
                         },
                         {
-                            title: "Weapons",
-                            href: "/guide/mechanics-weapons",
-                            disabled: true,
+                            title: "Gacha Weapons",
+                            href: "/guide/core-concepts-gacha-weapons",
                         },
                         {
-                            title: "Summons",
-                            href: "/guide/mechanics-summons",
-                            disabled: true,
+                            title: "Reserve & Reduce",
+                            href: "/guide/core-concepts-reserve-reduce",
                         },
                     ],
                 },
                 {
-                    title: "Battle",
-                    href: "/guide/mechanics-battle",
-                    disabled: true,
+                    title: "Damage Formula",
+                    href: "/guide/core-concepts-damage-formula",
                 },
                 {
-                    title: "Shop",
-                    href: "/guide/mechanics-shop",
-                    disabled: true,
+                    title: "Raids",
+                    href: "/guide/core-concepts-raids",
+                },
+                {
+                    title: "Impossible Raids",
+                    href: "/guide/core-concepts-impossible-raids",
                 },
             ],
         },
@@ -139,22 +138,27 @@ export const mainConfig = {
                 {
                     title: "Introduction",
                     href: "/guide/beginner",
-                    disabled: true,
                 },
                 {
                     title: "Team Building",
                     href: "/guide/beginner-team-building",
-                    disabled: true,
                 },
                 {
                     title: "Grid Building",
                     href: "/guide/beginner-grid-building",
-                    disabled: true,
                 },
                 {
                     title: "Progression",
-                    href: "/guide/beginner-progression",
-                    disabled: true,
+                    items: [
+                        {
+                            title: "Next Steps",
+                            href: "/guide/beginner-next-steps",
+                        },
+                        {
+                            title: "Transition",
+                            href: "/guide/beginner-transition",
+                        },
+                    ],
                 },
             ],
         },
