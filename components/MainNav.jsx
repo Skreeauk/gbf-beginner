@@ -6,6 +6,7 @@ import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/Icons"
 import { MobileNav } from "@/components/MobileNav"
+import Image from "next/image"
 
 export function MainNav({ items, children }) {
     const [showMobileMenu, setShowMobileMenu] =
@@ -13,6 +14,17 @@ export function MainNav({ items, children }) {
 
     return (
         <div className="flex gap-6 md:gap-10">
+            <Link
+                href="/"
+                className="hidden md:block"
+            >
+                <Image
+                    src="/logo.png"
+                    width={48}
+                    height={48}
+                    alt="GBF - Beginner"
+                />
+            </Link>
             {items?.length ? (
                 <nav className="hidden gap-6 md:flex">
                     {items?.map((item, index) => (
@@ -35,7 +47,7 @@ export function MainNav({ items, children }) {
                 </nav>
             ) : null}
             <button
-                className="flex items-center space-x-2 md:hidden text-secondary"
+                className="flex items-center space-x-2 md:hidden text-foreground"
                 onClick={() =>
                     setShowMobileMenu(!showMobileMenu)
                 }

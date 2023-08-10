@@ -87,12 +87,12 @@ export default function HomePage() {
                     >
                         <AccordionItem value="item-1">
                             <AccordionTrigger className="text-xl">
-                                Does the game have a english
+                                Does the game have a English
                                 server?
                             </AccordionTrigger>
                             <AccordionContent className="text-lg">
                                 No. The game only has
-                                japanese server. GBF is
+                                Japanese server. GBF is
                                 mainly for Japanese with a
                                 dedicated English UI by
                                 Cygames themselves.
@@ -138,6 +138,17 @@ export default function HomePage() {
                                 rolls for starting and a
                                 starter banner is available
                                 with 6% SSR rate.
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-4">
+                            <AccordionTrigger className="text-xl">
+                                Is the game grindy?
+                            </AccordionTrigger>
+                            <AccordionContent className="text-lg">
+                                GBF is a really grindy game.
+                                The more time spent in the
+                                game, the more rewards you
+                                get.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
