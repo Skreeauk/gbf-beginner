@@ -34,7 +34,6 @@
     "mdast-util-toc": "^7.0.0",
     "next": "13.4.13",
     "next-contentlayer": "^0.3.4",
-    "next-nprogress-bar": "^2.1.0",
     "next-themes": "^0.2.1",
     "postcss": "8.4.27",
     "prettier": "^3.0.1",

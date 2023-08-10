@@ -3,10 +3,10 @@ import { Inter } from "next/font/google"
 
 import { Analytics } from "@vercel/analytics/react"
 
-import { Suspense } from "react"
+// import { Suspense } from "react"
 
 import { ThemeProvider } from "@/components/Provider/ThemeProvider"
-import ProgressProvider from "@/components/Provider/ProgressProvider"
+// import ProgressProvider from "@/components/Provider/ProgressProvider"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -27,9 +27,9 @@ export default function RootLayout({ children }) {
                     defaultTheme="system"
                     enableSystem
                 >
-                    <Suspense fallback={null}>
+                    {/* <Suspense fallback={<></>}>
                         <ProgressProvider />
-                    </Suspense>
+                    </Suspense> */}
                     <div className="min-h-screen flex flex-col bg-background">
                         {children}
                     </div>

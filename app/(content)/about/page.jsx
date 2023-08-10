@@ -11,8 +11,8 @@ export default function AboutPage() {
                     <span className="text-2xl text-center mx-28">
                         This is a personal project for
                         learning and then thought that GBF
-                        doesn't have a proper documentation
-                        for beginners.
+                        doesn&apos;t have a proper
+                        documentation for beginners.
                     </span>
                     <div className="flex-1 flex flex-col items-center w-full gap-10">
                         <span className="text-2xl">
@@ -22,8 +22,7 @@ export default function AboutPage() {
                             <div className="h-32 w-32">
                                 <svg
                                     viewBox="0 0 256 256"
-                                    version="1.1"
-                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlnsXlink="http://www.w3.org/2000/svg"
                                     className="fill-black"
                                 >
                                     <title>NextJS</title>
@@ -36,8 +35,7 @@ export default function AboutPage() {
                             <div className="h-32 w-32">
                                 <svg
                                     viewBox="0 -14 256 256"
-                                    version="1.1"
-                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlnsXlink="http://www.w3.org/2000/svg"
                                     className="fill-black"
                                 >
                                     <title>React</title>
@@ -50,7 +48,7 @@ export default function AboutPage() {
                             <div className="h-32 w-32">
                                 <svg
                                     viewBox="0 0 32 32"
-                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlnsXlink="http://www.w3.org/2000/svg"
                                     className="fill-white"
                                 >
                                     <title>
@@ -65,7 +63,7 @@ export default function AboutPage() {
                             <div className="h-32 w-32">
                                 <svg
                                     viewBox="0 0 32 32"
-                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlnsXlink="http://www.w3.org/2000/svg"
                                     className="fill-black"
                                 >
                                     <title>MDX</title>
