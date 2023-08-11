@@ -1,7 +1,64 @@
 ---
 uniqueSlug: core-concepts-weapon-skills
 title: Weapon Skills
-description: There is only one certainty in life and that is people can't build grids.
+description: Back to the basics
 ---
 
-Placeholder
+Weapon Skills are modifiers that give bonuses of a stat to characters that meet the
+criteria (e.g. `Boost to Dark Allies ATK` will only affect Dark Characters)
+
+<Callout type="default">
+    There are other criterias such as Character Race,
+    Character Weapon Proficiency, etc
+</Callout>
+
+## Deconstructing Weapon Skills
+
+Weapon Skills can be split into three, `effect`, `lvl` and `type`.
+
+The skill effect is the `Big Boost to Allies ATK` and this has a % value.
+The skill lvl determines the numerical value of effect like a skill lvl 1 could have 1% while a skill lvl 10 could have 10%.
+
+The skill type comes into play to differentiate between `Omega`, `Normal` and `EX`.
+Each type will have different ranges. See the table below detailing `Medium HP Boost to Allies` to understand what we meant.
+
+|  Type  | Skill Lvl 1 | Skill Lvl 10 | Skill lvl 15 | Skill Lvl 20 |
+| :----: | :---------: | :----------: | :----------: | :----------: |
+| Omega  |    6.0%     |    15.0%     |    17.0%     |    20.0%     |
+| Normal |    6.0%     |    15.0%     |    17.0%     |      -       |
+|   EX   |    3.0%     |    12.0%     |    14.5%     |      -       |
+
+<Callout type="default">
+    You can read more about the ranges
+    [here](https://gbf.wiki/Weapon_Skills)
+</Callout>
+
+## Understanding Weapon Skill Types
+
+`Omega`, `Normal` and `EX` is not just used to differentiate the ranges,
+but also in deciding on which summons to use as if you're using a Magna Summon,
+then you will want to have more Omega Weapon Skills in the grid.
+
+<Callout type="default">
+    This can be seen clearly in [Damage
+    Formula](/guide/core-concepts-damage-formula)
+</Callout>
+
+## Upgrading Weapon Skills Lvl
+
+You can raise a weapon's skill lvl by using another weapon with a skill (does not have to be the same weapon or skill).
+
+<Callout type="default">
+    You can read more about upgrading weapon skills lvl [here](https://gbf.wiki/Upgrading_Weapon_Skills)
+
+    You can read more about reserving weapons [here](/guide/core-concepts-reserve-reduce)
+
+</Callout>
+
+## Weapon Skills Lvl Cap
+
+| Weapon Uncap  | Skill Lvl Cap |
+| :-----------: | :-----------: |
+| 0 - 3\* / MLB |      10       |
+|   4\* / FLB   |      15       |
+|   5\* / ULB   |      20       |
