@@ -106,10 +106,7 @@ const components = {
     ),
     li: ({ className, ...props }) => (
         <li
-            className={cn(
-                "mt-2 [&:nth-child(n)]:underline before:content-['asd'] before:pr-6",
-                className
-            )}
+            className={cn("mt-2", className)}
             {...props}
         />
     ),
