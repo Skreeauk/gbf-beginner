@@ -35,7 +35,7 @@ export function GuidePager({ guide }) {
                         buttonVariants({
                             variant: "ghost",
                         }),
-                        "ml-auto hover:text-primary hover:bg-transparent"
+                        "ml-auto hover:text-primary hover:bg-transparent text-end"
                     )}
                 >
                     {pager.next.title}

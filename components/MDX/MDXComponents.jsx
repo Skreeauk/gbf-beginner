@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useMDXComponent } from "next-contentlayer/hooks"
 
 import { cn } from "@/lib/utils"
+
 import { Callout } from "./MDXCallout"
 import { MDXCard } from "./MDXCard"
 import { Hover } from "./MDXHover"
@@ -14,8 +15,6 @@ import {
     TabsList,
     TabsTrigger,
 } from "@/components/ui/tabs"
-
-import { AspectRatio } from "@/components/ui/aspect-ratio"
 
 const components = {
     h1: ({ className, ...props }) => (
@@ -107,7 +106,10 @@ const components = {
     ),
     li: ({ className, ...props }) => (
         <li
-            className={cn("mt-2", className)}
+            className={cn(
+                "mt-2 [&:nth-child(n)]:underline before:content-['asd'] before:pr-6",
+                className
+            )}
             {...props}
         />
     ),
@@ -122,7 +124,7 @@ const components = {
     ),
     img: ({ className, alt, ...props }) => (
         // eslint-disable-next-line @next/next/no-img-element
-        <Image
+        <img
             className={cn("rounded-md border", className)}
             alt={alt}
             {...props}
@@ -223,8 +225,58 @@ const components = {
             {...props}
         />
     ),
-    Image,
-    AspectRatio,
+    Image: ({ className, alt, ...props }) => (
+        <Image
+            className={className}
+            alt={alt}
+            {...props}
+        />
+    ),
+    Youtube: ({ id }) => (
+        <iframe
+            className="w-full h-full p-0 aspect-video"
+            src={"https://www.youtube.com/embed/" + id}
+            frameBorder={0}
+            allow="accelerometer; clipboard-write; encrypted-mediaa: gyroscope, picture-in-picture"
+            allowFullScreen
+            title="Youtube Video"
+        />
+    ),
+    Steps: ({ ...props }) => (
+        <div
+            className="[&>h3]:step steps mb-12 ml-4 [counter-reset:step]"
+            {...props}
+        />
+    ),
+    Step: ({
+        className,
+        auto,
+        txt,
+        last,
+        children,
+        ...props
+    }) => (
+        <div className="flex flex-col">
+            <div className="flex flex-row items-center font-heading scroll-m-20 text-lg font-semibold tracking-tight">
+                <h3 className="before:bg-gray-500 before:h-9 before:inline-flex before:w-9 before:items-center before:justify-center before:rounded-full [counter-increment:step] pr-6 before:[content:counters(step,'.')]" />
+                <h3
+                    className={className}
+                    {...props}
+                >
+                    {txt}
+                </h3>
+            </div>
+            <div
+                className={cn(
+                    "ml-4 my-3 h-10 pl-11",
+                    !last && "border-l",
+                    auto && "h-auto"
+                )}
+            >
+                {children}
+            </div>
+        </div>
+    ),
     Callout,
     Hover,
     Card: MDXCard,
