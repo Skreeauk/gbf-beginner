@@ -9,8 +9,6 @@ import { TableOfContents } from "@/components/TOC"
 
 import "@/css/mdx.css"
 
-import { absoluteUrl } from "@/lib/utils"
-
 async function getGuideFromParams(params) {
     const slug = params.slug?.join("/") || ""
 

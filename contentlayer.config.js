@@ -18,7 +18,7 @@ const computedFields = {
         resolve: (guide) =>
             guide._raw.flattenedPath
                 .split("/")
-                .slice(1)
+                .slice(2)
                 .join("/"),
     },
 }

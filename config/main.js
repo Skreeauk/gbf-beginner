@@ -120,7 +120,16 @@ export const mainConfig = {
                 },
                 {
                     title: "Damage Formula",
-                    href: "/guide/core-concepts-damage-formula",
+                    items: [
+                        {
+                            title: "Formula",
+                            href: "/guide/core-concepts-damage-formula",
+                        },
+                        {
+                            title: "Example",
+                            href: "/guide/core-concepts-damage-formula-example",
+                        },
+                    ],
                 },
                 {
                     title: "Raids",
@@ -155,6 +164,22 @@ export const mainConfig = {
                             href: "/guide/beginner-next-steps",
                         },
                         {
+                            title: "Rank 40",
+                            href: "/guide/beginner-rank-40",
+                        },
+                        {
+                            title: "Rank 50",
+                            href: "/guide/beginner-rank-50",
+                        },
+                        {
+                            title: "Rank 80",
+                            href: "/guide/beginner-rank-80",
+                        },
+                        {
+                            title: "Rank 101",
+                            href: "/guide/beginner-rank-101",
+                        },
+                        {
                             title: "Transition",
                             href: "/guide/beginner-transition",
                         },
@@ -168,17 +193,39 @@ export const mainConfig = {
                 {
                     title: "Introduction",
                     href: "/guide/intermediate",
-                    disabled: true,
                 },
                 {
                     title: "Grid Building",
                     href: "/guide/intermediate-grid-building",
-                    disabled: true,
                 },
                 {
                     title: "Progression",
-                    href: "/guide/intermediate-progression",
-                    disabled: true,
+                    items: [
+                        {
+                            title: "Rank 120",
+                            href: "/guide/intermediate-rank-120",
+                        },
+                        {
+                            title: "Rank 130",
+                            href: "/guide/intermediate-rank-130",
+                        },
+                        {
+                            title: "Rank 150",
+                            href: "/guide/intermediate-rank-150",
+                        },
+                        {
+                            title: "Rank 151",
+                            href: "/guide/intermediate-rank-151",
+                        },
+                        {
+                            title: "Rank 170",
+                            href: "/guide/intermediate-rank-170",
+                        },
+                        {
+                            title: "What's Next",
+                            href: "/guide/intermediate-whats-next",
+                        },
+                    ],
                 },
             ],
         },
