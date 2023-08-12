@@ -52,8 +52,10 @@ export function getPagerForGuide(guide) {
         ...flatten(mainConfig.sidebarNav),
         null,
     ]
+
     const activeIndex = flattenedLinks.findIndex(
-        (link) => guide.slug === link?.href
+        (link) =>
+            "/guide/" + guide.slugAsParams === link?.href
     )
 
     const prev =

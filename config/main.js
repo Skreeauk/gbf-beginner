@@ -74,74 +74,6 @@ export const mainConfig = {
             ],
         },
         {
-            title: "Core Concept",
-            items: [
-                {
-                    title: "Introduction",
-                    href: "/guide/core-concepts",
-                },
-                {
-                    title: "Classes",
-                    href: "/guide/core-concepts-classes",
-                },
-                {
-                    title: "Summons",
-                    items: [
-                        {
-                            title: "Magna",
-                            href: "/guide/core-concepts-magna",
-                        },
-                        {
-                            title: "Primal",
-                            href: "/guide/core-concepts-primal",
-                        },
-                        {
-                            title: "Support",
-                            href: "/guide/core-concepts-support",
-                        },
-                    ],
-                },
-                {
-                    title: "Weapons",
-                    items: [
-                        {
-                            title: "Weapon Skills",
-                            href: "/guide/core-concepts-weapon-skills",
-                        },
-                        {
-                            title: "Gacha Weapons",
-                            href: "/guide/core-concepts-gacha-weapons",
-                        },
-                        {
-                            title: "Reserve & Reduce",
-                            href: "/guide/core-concepts-reserve-reduce",
-                        },
-                    ],
-                },
-                {
-                    title: "Damage Formula",
-                    items: [
-                        {
-                            title: "Formula",
-                            href: "/guide/core-concepts-damage-formula",
-                        },
-                        {
-                            title: "Example",
-                            href: "/guide/core-concepts-damage-formula-example",
-                        },
-                    ],
-                },
-                {
-                    title: "Raids",
-                    href: "/guide/core-concepts-raids",
-                },
-                {
-                    title: "Impossible Raids",
-                    href: "/guide/core-concepts-impossible-raids",
-                },
-            ],
-        },
-        {
             title: "Beginner",
             items: [
                 {
@@ -162,6 +94,10 @@ export const mainConfig = {
                         {
                             title: "Next Steps",
                             href: "/guide/beginner-next-steps",
+                        },
+                        {
+                            title: "Rank 30",
+                            href: "/guide/beginner-rank-30",
                         },
                         {
                             title: "Rank 40",
@@ -226,6 +162,74 @@ export const mainConfig = {
                             href: "/guide/intermediate-whats-next",
                         },
                     ],
+                },
+            ],
+        },
+        {
+            title: "Core Concept",
+            items: [
+                {
+                    title: "Introduction",
+                    href: "/guide/core-concepts",
+                },
+                {
+                    title: "Classes",
+                    href: "/guide/core-concepts-classes",
+                },
+                {
+                    title: "Summons",
+                    items: [
+                        {
+                            title: "Magna",
+                            href: "/guide/core-concepts-magna",
+                        },
+                        {
+                            title: "Primal",
+                            href: "/guide/core-concepts-primal",
+                        },
+                        {
+                            title: "Support",
+                            href: "/guide/core-concepts-support",
+                        },
+                    ],
+                },
+                {
+                    title: "Weapons",
+                    items: [
+                        {
+                            title: "Weapon Skills",
+                            href: "/guide/core-concepts-weapon-skills",
+                        },
+                        {
+                            title: "Gacha Weapons",
+                            href: "/guide/core-concepts-gacha-weapons",
+                        },
+                        {
+                            title: "Reserve & Reduce",
+                            href: "/guide/core-concepts-reserve-reduce",
+                        },
+                    ],
+                },
+                {
+                    title: "Damage Formula",
+                    items: [
+                        {
+                            title: "Formula",
+                            href: "/guide/core-concepts-damage-formula",
+                        },
+                        {
+                            title: "Example",
+                            href: "/guide/core-concepts-damage-formula-example",
+                        },
+                    ],
+                },
+                {
+                    title: "Raids",
+                    href: "/guide/core-concepts-raids",
+                },
+                {
+                    title: "Impossible Raids",
+                    href: "/guide/core-concepts-impossible-raids",
                 },
             ],
         },
