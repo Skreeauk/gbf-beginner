@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils"
 
 export function Callout({
+    className,
     children,
     icon,
     type = "default",
@@ -9,7 +10,8 @@ export function Callout({
     return (
         <div
             className={cn(
-                "my-6 flex items-start rounded-md border border-l-4 p-4",
+                "my-6 flex items-start rounded-md border border-l-4 bg-muted/60 p-4",
+                className,
                 {
                     "border-red-900 bg-red-400 dark:bg-red-700":
                         type === "danger",

@@ -116,8 +116,8 @@ export const mainConfig = {
                             href: "/guide/beginner-rank-101",
                         },
                         {
-                            title: "Transition",
-                            href: "/guide/beginner-transition",
+                            title: "What's Next",
+                            href: "/guide/beginner-whats-next",
                         },
                     ],
                 },
@@ -173,23 +173,32 @@ export const mainConfig = {
                     href: "/guide/core-concepts",
                 },
                 {
-                    title: "Classes",
-                    href: "/guide/core-concepts-classes",
-                },
-                {
-                    title: "Summons",
+                    title: "MC",
                     items: [
                         {
-                            title: "Magna",
-                            href: "/guide/core-concepts-magna",
+                            title: "Classes",
+                            href: "/guide/core-concepts-mc-classes",
                         },
                         {
-                            title: "Primal",
-                            href: "/guide/core-concepts-primal",
+                            title: "Class Mastery",
+                            href: "/guide/core-concepts-mc-class-mastery",
                         },
                         {
-                            title: "Support",
-                            href: "/guide/core-concepts-support",
+                            title: "EMP",
+                            href: "/guide/core-concepts-mc-emp",
+                        },
+                    ],
+                },
+                {
+                    title: "Characters",
+                    items: [
+                        {
+                            title: "EMP",
+                            href: "/guide/core-concepts-character-emp",
+                        },
+                        {
+                            title: "Awakening",
+                            href: "/guide/core-concepts-character-awakening",
                         },
                     ],
                 },
@@ -211,6 +220,40 @@ export const mainConfig = {
                     ],
                 },
                 {
+                    title: "Summons",
+                    items: [
+                        {
+                            title: "Magna",
+                            href: "/guide/core-concepts-magna",
+                        },
+                        {
+                            title: "Primal",
+                            href: "/guide/core-concepts-primal",
+                        },
+                        {
+                            title: "Support",
+                            href: "/guide/core-concepts-support",
+                        },
+                    ],
+                },
+                {
+                    title: "Resources",
+                    href: "/guide/core-concepts-important-resources",
+                },
+                {
+                    title: "Raids",
+                    items: [
+                        {
+                            title: "Standard",
+                            href: "/guide/core-concepts-raids",
+                        },
+                        {
+                            title: "Impossible",
+                            href: "/guide/core-concepts-impossible-raids",
+                        },
+                    ],
+                },
+                {
                     title: "Damage Formula",
                     items: [
                         {
@@ -223,13 +266,53 @@ export const mainConfig = {
                         },
                     ],
                 },
+            ],
+        },
+        {
+            title: "Events",
+            items: [
                 {
-                    title: "Raids",
-                    href: "/guide/core-concepts-raids",
+                    title: "Story / Boxing",
+                    href: "/",
+                    disabled: true,
                 },
                 {
-                    title: "Impossible Raids",
-                    href: "/guide/core-concepts-impossible-raids",
+                    title: "Rerun / Shop",
+                    href: "/",
+                    disabled: true,
+                },
+                {
+                    title: "Unite & Fight",
+                    items: [
+                        {
+                            title: "UnF",
+                            href: "/",
+                            disabled: true,
+                        },
+                        {
+                            title: "Eternals",
+                            href: "/guide/events-eternals",
+                        },
+                    ],
+                },
+            ],
+        },
+        {
+            title: "Arcarum",
+            items: [
+                {
+                    title: "Arcarum",
+                    href: "/",
+                    disabled: true,
+                },
+                {
+                    title: "Sandbox",
+                    href: "/",
+                    disabled: true,
+                },
+                {
+                    title: "Evokers",
+                    href: "/guide/arcarum-evokers",
                 },
             ],
         },
