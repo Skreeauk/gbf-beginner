@@ -6,8 +6,11 @@ import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { useLockBody } from "@/hooks/use-lock-body"
 
+import { GuideSidebarNav } from "@/components/Guide/GuideSidebarNav"
+
 export function MobileNav({
     items,
+    showMobileMenu,
     setShowMobileMenu,
     children,
 }) {
@@ -21,7 +24,7 @@ export function MobileNav({
         >
             <div className="relative z-20 grid gap-6 rounded-md bg-accent p-4 text-foreground shadow-md">
                 <nav className="grid grid-flow-row auto-rows-max text-sm">
-                    {items.map((item, index) => (
+                    {items.mainNav.map((item, index) => (
                         <Link
                             key={index}
                             href={
@@ -42,7 +45,11 @@ export function MobileNav({
                         </Link>
                     ))}
                 </nav>
-                {children}
+                <GuideSidebarNav
+                    items={items.sidebarNav}
+                    showMobileMenu={showMobileMenu}
+                    setShowMobileMenu={setShowMobileMenu}
+                />
             </div>
         </div>
     )

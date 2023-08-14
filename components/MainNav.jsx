@@ -26,25 +26,27 @@ export function MainNav({ items, children }) {
                 />
             </Link>
             <div className="flex gap-6 md:gap-10 h-fit">
-                {items?.length ? (
+                {items?.mainNav.length ? (
                     <nav className="hidden gap-6 md:flex">
-                        {items?.map((item, index) => (
-                            <Link
-                                key={index}
-                                href={
-                                    item.disabled
-                                        ? "#"
-                                        : item.href
-                                }
-                                className={cn(
-                                    "flex items-center text-lg text-foreground font-medium transition-colors hover:text-foreground/80 sm:text-sm  relative after:absolute after:bg-foreground after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300",
-                                    item.disabled &&
-                                        "cursor-not-allowed opacity-80"
-                                )}
-                            >
-                                {item.title}
-                            </Link>
-                        ))}
+                        {items?.mainNav.map(
+                            (item, index) => (
+                                <Link
+                                    key={index}
+                                    href={
+                                        item.disabled
+                                            ? "#"
+                                            : item.href
+                                    }
+                                    className={cn(
+                                        "flex items-center text-lg text-foreground font-medium transition-colors hover:text-foreground/80 sm:text-sm  relative after:absolute after:bg-foreground after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300",
+                                        item.disabled &&
+                                            "cursor-not-allowed opacity-80"
+                                    )}
+                                >
+                                    {item.title}
+                                </Link>
+                            )
+                        )}
                     </nav>
                 ) : null}
                 <button
@@ -62,6 +64,7 @@ export function MainNav({ items, children }) {
                 {showMobileMenu && items && (
                     <MobileNav
                         items={items}
+                        showMobileMenu={showMobileMenu}
                         setShowMobileMenu={
                             setShowMobileMenu
                         }

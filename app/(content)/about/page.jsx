@@ -5,10 +5,10 @@ export default function AboutPage() {
         <main className="flex-1 flex flex-col gap-32 text-foreground">
             <div className="flex-1 px-4 py-2 flex flex-row mt-16">
                 <div className="flex-1 flex items-center flex-col gap-12">
-                    <span className="text-5xl">
+                    <span className="text-5xl text-center">
                         About GBF Beginner
                     </span>
-                    <span className="text-2xl text-center mx-28">
+                    <span className="text-2xl text-center mex-4 md:mx-28">
                         This is a personal project for
                         learning and then thought that GBF
                         doesn&apos;t have a proper

@@ -210,6 +210,10 @@ export const mainConfig = {
                             href: "/guide/core-concepts-weapon-skills",
                         },
                         {
+                            title: "Critical Damage",
+                            href: "/guide/core-concepts-critical-damage",
+                        },
+                        {
                             title: "Gacha Weapons",
                             href: "/guide/core-concepts-gacha-weapons",
                         },
@@ -238,7 +242,16 @@ export const mainConfig = {
                 },
                 {
                     title: "Resources",
-                    href: "/guide/core-concepts-important-resources",
+                    items: [
+                        {
+                            title: "Pots",
+                            href: "/guide/core-concepts-pots",
+                        },
+                        {
+                            title: "Important Resources",
+                            href: "/guide/core-concepts-important-resources",
+                        },
+                    ],
                 },
                 {
                     title: "Raids",
@@ -320,19 +333,12 @@ export const mainConfig = {
             title: "Other",
             items: [
                 {
-                    title: "Introduction",
-                    href: "/guide/other",
-                    disabled: true,
-                },
-                {
                     title: "FAQ",
                     href: "/guide/other-faq",
-                    disabled: true,
                 },
                 {
                     title: "Contributing",
                     href: "/guide/other-contributing",
-                    disabled: true,
                 },
             ],
         },

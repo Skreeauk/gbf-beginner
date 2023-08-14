@@ -12,7 +12,11 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion"
 
-export function GuideSidebarNav({ items }) {
+export function GuideSidebarNav({
+    items,
+    showMobileMenu,
+    setShowMobileMenu,
+}) {
     const pathname = usePathname()
 
     return items.length ? (
@@ -20,16 +24,36 @@ export function GuideSidebarNav({ items }) {
             {items.map((item, index) => (
                 <div
                     key={index}
-                    className={cn("pb-8")}
+                    className={cn("pb-6")}
                 >
-                    <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-medium text-foreground">
-                        {item.title}
-                    </h4>
                     {item.items ? (
-                        <SidebarNavItems
-                            items={item.items}
-                            pathname={pathname}
-                        />
+                        <Accordion
+                            type="single"
+                            collapsible
+                        >
+                            <AccordionItem
+                                value={item.title}
+                                className="border-none"
+                            >
+                                <AccordionTrigger className="py-0 text-start">
+                                    <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-medium text-foreground">
+                                        {item.title}
+                                    </h4>
+                                </AccordionTrigger>
+                                <AccordionContent>
+                                    <SidebarNavItems
+                                        items={item.items}
+                                        pathname={pathname}
+                                        showMobileMenu={
+                                            showMobileMenu
+                                        }
+                                        setShowMobileMenu={
+                                            setShowMobileMenu
+                                        }
+                                    />
+                                </AccordionContent>
+                            </AccordionItem>
+                        </Accordion>
                     ) : null}
                 </div>
             ))}
@@ -37,7 +61,13 @@ export function GuideSidebarNav({ items }) {
     ) : null
 }
 
-export function SidebarNavItems({ items, pathname, deep }) {
+export function SidebarNavItems({
+    items,
+    pathname,
+    deep,
+    showMobileMenu,
+    setShowMobileMenu,
+}) {
     return items?.length ? (
         <div
             className={cn(
@@ -65,6 +95,11 @@ export function SidebarNavItems({ items, pathname, deep }) {
                                 ? "noreferrer"
                                 : ""
                         }
+                        onClick={() => {
+                            if (showMobileMenu) {
+                                setShowMobileMenu(false)
+                            }
+                        }}
                     >
                         {item.title}
                     </Link>
@@ -75,7 +110,7 @@ export function SidebarNavItems({ items, pathname, deep }) {
                         collapsible
                     >
                         <AccordionItem
-                            value="item-1"
+                            value={item.title}
                             className="border-none"
                         >
                             <AccordionTrigger className="py-0 text-start">

@@ -1,0 +1,50 @@
+---
+uniqueSlug: core-concepts-critical-damage
+title: Critical Chance & DMG
+description: Crit exceeds cap?
+---
+
+Some elements are able to utilize Critical Damage and we will try to explain the mechanics behind it
+
+## Understanding Critical DMG Stacking
+
+Critical Hit Rate can come from various sources: `Character / Summon Buffs`, `Grid Weapon Skills` and `EMP`.
+
+Think of each source as a dice and everytime a character deals damage,
+it will roll the dices 1 by 1.
+
+<Callout>
+    Imagine we have a Crit (Buff) as well as Crit (Grid) and Crit (EMP).
+
+    If we roll Buff and Grid but fail EMP, our Final DMG would be DMG x Crit (Buff) x Crit (Grid).
+
+    If we roll Buff and EMP but fail Grid, it will be DMG x Crit (Buff) x Crit (EMP).
+
+</Callout>
+
+<Callout type="default">
+    You can read more about Critical Damage
+    [here](https://gbf.wiki/Critical_Damage)
+</Callout>
+
+## Critical DMG (Grid)
+
+Weapon Skills that give Critical is actually only Critical Hit Rate.
+The Critical Damage from Grid is always a static value of 50%.
+
+<Callout type="default">
+    You can read more about how to stack Critical Hit Rate
+    in Grid
+    [here](/guide/core-concepts-weapon-skills#examples)
+</Callout>
+
+<Callout type="default">
+    You can read more about Critical Hit Rate Weapon Skills
+    [here](https://gbf.wiki/Weapon_Skills#Critical_Hit_Rate)
+</Callout>
+
+## Critical DMG and DMG Cap
+
+<Callout type="danger">
+    Critical DMG does not make you go past cap.
+</Callout>
