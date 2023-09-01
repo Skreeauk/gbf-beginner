@@ -23,9 +23,10 @@ export function Search({ className, ...props }) {
             {...props}
         >
             <Input
+                disabled
                 type="search"
-                placeholder="Search..."
-                className="h-8 w-full text-secondary sm:w-64 sm:pr-12"
+                placeholder="Search not working yet"
+                className="h-8 w-full text-secondary sm:w-64 sm:pr-12 appearance-none"
             />
         </form>
     )

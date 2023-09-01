@@ -56,20 +56,18 @@ export default function HomePage() {
                                     There are other beginner
                                     guides available out
                                     there however
-                                    they&apos;re mostly in
-                                    Google Docs and it is
-                                    full of text and makes
-                                    it difficult to read
+                                    they&apos;re mostly full
+                                    of text and makes it
+                                    difficult to read.
                                 </span>
                                 <span>
-                                    Our tutorial/guide aims
-                                    to be easy to read and
-                                    understand as well as
-                                    providing the guide in a
-                                    structured way that
-                                    Google Docs
-                                    wouldn&apos;t be able to
-                                    offer
+                                    Our guide aims to make
+                                    it easier for new
+                                    players to understand
+                                    and provide a flow of
+                                    progression as the game
+                                    has a lot of things to
+                                    do
                                 </span>
                             </div>
                         </div>
@@ -137,6 +135,11 @@ export default function HomePage() {
                                 rolls for starting and a
                                 starter banner is available
                                 with 6% SSR rate.
+                                <br />
+                                <br />
+                                You can also consider
+                                getting an account from
+                                someone.
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-4">

@@ -78,21 +78,21 @@ export default function ResourcePage() {
                         </div>
                     </Link>
                     <Link
-                        href="#"
+                        href="https://discord.gg/esJuPhs"
                         className="relative aspect-[2/3] w-[95%] shrink-0 snap-start snap-always rounded-xl"
                     >
                         <Image
-                            src="/images/fediel_skin.png"
+                            src="/images/vampy_yukata.png"
                             height="0"
                             width="0"
                             quality={100}
                             sizes="100vw"
                             alt="fediel skin"
-                            className="h-full w-full rounded-xl object-cover object-[30%_center]"
+                            className="h-full w-full rounded-xl object-cover"
                         />
                         <div className="absolute bottom-0 z-10 w-full rounded-xl bg-gradient-to-t from-black px-5 py-3">
                             <h2 className="mt-4 text-xl font-bold text-white">
-                                /gbfg/
+                                GBF Wiki Discord
                             </h2>
                             <p className="text-sm text-white/50">
                                 A Discord Server
@@ -100,11 +100,11 @@ export default function ResourcePage() {
                         </div>
                     </Link>
                     <Link
-                        href="#"
+                        href="https://www.reddit.com/r/Granblue_en/"
                         className="relative aspect-[2/3] w-[95%] shrink-0 snap-start snap-always rounded-xl"
                     >
                         <Image
-                            src="/images/vicky_skin.png"
+                            src="/images/cupitan_bread.png"
                             height="0"
                             width="0"
                             quality={100}
@@ -114,12 +114,10 @@ export default function ResourcePage() {
                         />
                         <div className="absolute bottom-0 z-10 w-full rounded-xl bg-gradient-to-t from-black px-5 py-3">
                             <h2 className="mt-4 text-xl font-bold text-white">
-                                it&apos;s Usagi Flap Fantasy
-                                not gb fantasy-Havarti
-                                Cheese Mk 2.0 Edition
+                                GBF EN Subreddit
                             </h2>
                             <p className="text-sm text-white/50">
-                                A Discord Server
+                                Reddit
                             </p>
                         </div>
                     </Link>
@@ -175,12 +173,12 @@ export default function ResourcePage() {
                                 </div>
                             </Link>
                             <Link
-                                href="#"
-                                className="h-full flex-1 flex items-end hover:basis-8/12 hover:grow-[0.001] overflow-hidden transition-all duration-500 ease-in-out rounded-lg group bg-[url('/images/fediel_skin.png')] bg-auto bg-no-repeat bg-center"
+                                href="https://discord.gg/esJuPhs"
+                                className="h-full flex-1 flex items-end hover:basis-8/12 hover:grow-[0.001] overflow-hidden transition-all duration-500 ease-in-out rounded-lg group bg-[url('/images/vampy_yukata.png')] bg-auto bg-no-repeat bg-center"
                             >
                                 <div className="hidden group-hover:flex group-hover:flex-col gap-2 whitespace-nowrap flex-nowrap p-4 w-full bg-gradient-to-b from-transparent to-transparent/60">
                                     <span className="text-white text-2xl">
-                                        /gbfg/
+                                        GBF Wiki Discord
                                     </span>
                                     <span className="text-white/90 text-xl">
                                         A Discord Server
@@ -188,19 +186,15 @@ export default function ResourcePage() {
                                 </div>
                             </Link>
                             <Link
-                                href="#"
-                                className="h-full flex-1 flex items-end hover:basis-8/12 hover:grow-[0.001] overflow-hidden transition-all duration-500 ease-in-out rounded-lg group bg-[url('/images/vicky_skin.png')] bg-auto bg-no-repeat bg-center"
+                                href="https://www.reddit.com/r/Granblue_en/"
+                                className="h-full flex-1 flex items-end hover:basis-8/12 hover:grow-[0.001] overflow-hidden transition-all duration-500 ease-in-out rounded-lg group bg-[url('/images/cupitan_bread.png')] bg-auto bg-no-repeat bg-center"
                             >
                                 <div className="hidden group-hover:flex group-hover:flex-col gap-2 whitespace-nowrap flex-nowrap p-4 w-full bg-gradient-to-b from-transparent to-transparent/60">
                                     <span className="text-white text-2xl">
-                                        it&apos;s Usagi Flap
-                                        Fantasy not gb
-                                        fantasy-Havarti
-                                        Cheese Mk 2.0
-                                        Edition
+                                        GBF EN Subreddit
                                     </span>
                                     <span className="text-white/90 text-xl">
-                                        A Discord Server
+                                        Reddit
                                     </span>
                                 </div>
                             </Link>

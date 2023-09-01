@@ -254,6 +254,11 @@ export const mainConfig = {
                     ],
                 },
                 {
+                    title: "V2",
+                    href: "/guide/core-concepts-v2",
+                    disabled: true,
+                },
+                {
                     title: "Raids",
                     items: [
                         {
@@ -286,27 +291,40 @@ export const mainConfig = {
             items: [
                 {
                     title: "Story / Boxing",
-                    href: "/",
-                    disabled: true,
+                    href: "/guide/events-story",
                 },
                 {
                     title: "Rerun / Shop",
-                    href: "/",
-                    disabled: true,
+                    href: "/guide/events-rerun",
+                },
+                {
+                    title: "Rise of The Beast",
+                    href: "/guide/events-rotb",
+                },
+                {
+                    title: "Proving Grounds",
+                    href: "/guide/events-proving-grounds",
+                },
+                {
+                    title: "Tower of Babyl",
+                    href: "/guide/events-tower-of-babyl",
                 },
                 {
                     title: "Unite & Fight",
                     items: [
                         {
                             title: "UnF",
-                            href: "/",
-                            disabled: true,
+                            href: "/guide/events-unf",
                         },
                         {
                             title: "Eternals",
                             href: "/guide/events-eternals",
                         },
                     ],
+                },
+                {
+                    title: "Dread Barrage",
+                    href: "/guide/events-dread-barrage",
                 },
             ],
         },
@@ -315,13 +333,11 @@ export const mainConfig = {
             items: [
                 {
                     title: "Arcarum",
-                    href: "/",
-                    disabled: true,
+                    href: "/guide/arcarum",
                 },
                 {
                     title: "Sandbox",
-                    href: "/",
-                    disabled: true,
+                    href: "/guide/arcarum-sandbox",
                 },
                 {
                     title: "Evokers",
