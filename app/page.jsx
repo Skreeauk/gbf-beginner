@@ -22,7 +22,7 @@ export default function LandingPage() {
                         className="py-6 px-6 bg-primary/20 hover:bg-primary/30 border border-border"
                         asChild
                     >
-                        <Link href="/home">
+                        <Link href="/guide/getting-started">
                             <span className="text-xl text-secondary dark:text-foreground">
                                 Continue
                             </span>

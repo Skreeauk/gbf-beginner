@@ -1,10 +1,6 @@
 export const mainConfig = {
     mainNav: [
         {
-            title: "Home",
-            href: "/home",
-        },
-        {
             title: "Guide",
             href: "/guide/getting-started",
         },
